@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Taj Mahal Background */
+body {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.75)
+    ),
+    url("https://images.unsplash.com/photo-1564507592333-c60657eea523")
+    no-repeat center center/cover;
+    color: #fff;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.65);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #ffd700;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero span {
+    color: #ffd700;
+}
+
+.hero p {
+    margin: 15px 0;
+}
+
+.btn {
+    padding: 12px 30px;
+    background: #ffd700;
+    color: #000;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+/* Glass Effect */
+.glass {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    margin: 60px auto;
+    padding: 40px;
+    max-width: 900px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+/* Projects */
+#projects {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background: rgba(0, 0, 0, 0.65);
+    padding: 25px;
+    border-radius: 18px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    padding: 15px;
+}
